@@ -30,7 +30,16 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="external/SDL3/x86_64-w64-mingw32/include" />
 		</Compiler>
+		<Linker>
+			<Add library="SDL3" />
+			<Add library="external/SDL3/i686-w64-mingw32/lib/libSDL3.dll.a" />
+			<Add directory="external/SDL3/x86_64-w64-mingw32/lib" />
+		</Linker>
+		<Unit filename="src/core/main.cpp" />
+		<Unit filename="src/graphics/ventanaPrincipal.cpp" />
+		<Unit filename="src/graphics/ventanaPrincipal.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
