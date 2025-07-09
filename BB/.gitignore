@@ -1,0 +1,26 @@
+# Archivos de compilación
+*.o
+*.obj
+*.exe
+*.dll
+*.lib
+*.so
+*.a
+
+# Carpetas generadas
+/bin/
+/obj/
+/build/
+/Debug/
+/Release/
+
+# Archivos de Code::Blocks que no deben subirse
+*.depend
+*.layout
+
+# Archivos temporales y del sistema
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.tmp
